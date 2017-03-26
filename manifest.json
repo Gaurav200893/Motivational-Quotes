@@ -1,0 +1,35 @@
+{
+  "manifest_version" : 2,
+  "name": "Motivational Quotes Fetcher",
+  "version": "0.1",
+
+  "description": "Gets the motivations from quotesdaddy",
+  "icons": { "16" : "icon.png",
+ 			"48" : "icon.png",
+			"128" : "icon.png"
+	},
+
+  "chrome_url_overrides" : {
+    "newtab": "newtab.html"
+  },
+  
+  "permissions": [
+	  "https://www.quotesdaddy.com/*",
+	  "https://*.google.com/*"
+	],
+	
+	"content_security_policy": "script-src 'self' https://www.google.com; object-src 'self'",
+  
+  
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["jquery.js"]
+    }
+  ],
+  
+  "web_accessible_resources": ["style.css"]
+
+}

@@ -1,0 +1,65 @@
+.quotes-container{
+	
+	font-color:white;
+	font-size:30px;
+	position: absolute;
+	top: 50%;
+	width: 95%;
+}
+.container-author{
+	
+	float: right;
+}
+
+img{
+	display: inline-block;
+    vertical-align: middle;
+	width:88px;
+}
+#quotes{
+	display: inline-block;
+    vertical-align: middle;
+	width:900px;
+}
+
+blockquote{
+display:block;
+/*background: #fff;*/
+margin: 0px 50px 0px 50px;
+padding: 30px 30px 30px 50px;
+position: relative;
+font-family: Georgia, serif;
+font-size: 20px;
+line-height: 1.2;
+color: #666;
+text-align: justify;
+
+color: wheat;
+
+}
+blockquote::before{
+content: “201C”; /*Unicode for Left Double Quote*/
+font-family: Georgia, serif;
+font-size: 60px;
+font-weight: bold;
+color: #999;
+position: absolute;
+left: 10px;
+top:5px;
+}
+blockquote::after{
+content: “”;
+}
+blockquote a{
+text-decoration: none;
+background: #eee;
+cursor: pointer;
+padding: 0 3px;
+color: #c76c0c;
+}
+blockquote a:hover{
+color: #666;
+}
+blockquote em{
+font-style: italic;
+}
